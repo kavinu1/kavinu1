@@ -22,7 +22,7 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
 
 ---
 
-## 🐍 Activity Graph
+### 🐍 Activity Graph
 
 <table align="center" border="none" width="50%">
   <tr>
@@ -35,23 +35,22 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
 
 ---
 
-## 🔥 My Statistics
+### 🔥 My Statistics
 
 <p align="center">
-  <br>
   <table align="center">
-  <tr border="none">
-  <td width="50%" align="center">
-  
-  <img  align="center"  src="https://github-readme-stats.vercel.app/api?username=kavinu1&theme=dark&show_icons=true&count_private=true" />
-  <br></br><br>
-  <img  title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Mark streak" src="https://github-readme-streak-stats.herokuapp.com/?user=kavinu1&theme=dark&hide_border=false" /> 
-</td>
-<td width="50%" align="center">
-  <img  align="center"  src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=kavinu1&theme=dark&hide_border=false&no-bg=true&no-frame=true&langs_count=10"/>  
-</td>
-</tr>
-</table>
+    <tr border="none">
+      <td width="50%" align="center">  
+        <img  align="center"  src="https://github-readme-stats.vercel.app/api?username=kavinu1&theme=dark&show_icons=true&count_private=true" />
+        </br></br>
+        <img  title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Mark streak" src="https://github-readme-streak-stats.herokuapp.com/?user=kavinu1&theme=dark&hide_border=false" />
+      </td>
+      <td width="50%" align="center">
+         <img  align="center"  src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=kavinu1&theme=dark&hide_border=false&no-bg=true&no-frame=true&langs_count=10"/>  
+      </td>
+    </tr>
+  </table>
+</p>
 
 ---
 
@@ -61,7 +60,7 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
 
 ---
 
-## 🏆 GitHub Achievements
+### 🏆 GitHub Achievements
 
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=kavinu1&theme=tokyonight&no-frame=true&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
@@ -69,7 +68,7 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
 
 ---
 
-## 🛠 Language and tools
+### 🖥️ Programming Languages
 
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="40" width="40" alt="C" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -77,8 +76,19 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" width="40" alt="Python" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" width="40" alt="Java" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" width="40" alt="HTML5" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" width="40" alt="CSS3" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://skillicons.dev/icons?i=github" height="40" width="40" alt="GitHub" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" width="40" alt="CSS3" />
+</div>
+
+### 🛠️ Technologies & Tools
+
+<div align="center">
+  <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://skillicons.dev/icons?i=github" height="40" width="40" alt="GitHub" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.worldvectorlogo.com/logos/adobe-photoshop-2.svg" alt="photoshop" width="40" height="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.worldvectorlogo.com/logos/intellij-idea-1.svg" alt="intellij" width="40" height="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="pycharm" width="40" height="40" />
 </div>
 
 ---
