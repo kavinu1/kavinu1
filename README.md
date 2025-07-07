@@ -46,7 +46,7 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
         <img  title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Mark streak" src="https://github-readme-streak-stats.herokuapp.com/?user=kavinu1&theme=dark&hide_border=false" />
       </td>
       <td width="50%" align="center">
-         <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kavinu1&theme=dark&hide_border=false&no-bg=true&no-frame=true&langs_count=10"/>
+         <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kavinu1&langs_count=10&hide=html,css&theme=dark&count_private=true"/>
       </td>
     </tr>
   </table>
