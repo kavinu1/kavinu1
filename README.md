@@ -14,7 +14,7 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
 
 - 🌱 I’m currently learning **Computer Science**
 
-- 🧑‍🎓 I’m an Undergraduate at **IIT**
+- 🧑‍🎓 I’m an Undergraduate at **UOW**
 
 - 💬 Ask me about Python, HTML, CSS
 
