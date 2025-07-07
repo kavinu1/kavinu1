@@ -28,10 +28,10 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
   <tr>
     <td align="center">
       <img src="https://kavinu1.github.io/kavinu1/snake.svg" alt="Snake animation" />
-      <h2 align="center">💹 Activity Graph</h2>
     </td>
   </tr>
 </table>
+<h3 align="center">💹 Activity Graph</h3>
 
 ---
 
