@@ -31,7 +31,7 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
     </td>
   </tr>
 </table>
-<h3 align="center">💹 Activity Graph</h3>
+<h4 align="center">💹 Activity Graph</h4>
 
 ---
 
