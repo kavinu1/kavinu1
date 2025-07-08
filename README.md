@@ -63,7 +63,7 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
 ### 🏆 GitHub Achievements
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=kavinu1&theme=tokyonight&no-frame=true&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=kavinu1&theme=tokyonight&no-frame=true&column=7&margin-w=15&margin-h=15&count_private=true" alt="GitHub Trophies" />
 </div>
 
 ---
