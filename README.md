@@ -27,7 +27,7 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
 <table align="center" border="none" width="50%">
   <tr>
     <td align="center">
-      <img src="https://kavinu1.github.io/kavinu1/snake.svg" alt="Snake animation" />
+      <img src="https://kavinu1.github.io/Snake-Animation/snake.svg" alt="Snake animation" />
     </td>
   </tr>
 </table>
