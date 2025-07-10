@@ -60,6 +60,16 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
 
 ---
 
+### 🟡 Activity Graph
+
+<picture align="center">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kavinu1/Pacman-Graph/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kavinu1/Pacman-Graph/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/kavinu1/Pacman-Graph/output/pacman-contribution-graph.svg">
+</picture>
+
+---
+
 ### 🏆 GitHub Achievements
 
 <div align="center">
