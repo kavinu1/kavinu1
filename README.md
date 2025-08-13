@@ -43,7 +43,7 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
       <td width="50%" align="center">  
         <img  align="center"  src="https://github-readme-stats.vercel.app/api?username=kavinu1&theme=dark&show_icons=true&count_private=true" />
         </br></br>
-        <img  title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Mark streak" src="https://github-readme-streak-stats.herokuapp.com/?user=kavinu1&theme=dark&hide_border=false" />
+        <img  title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Mark streak" src="https://nirzak-streak-stats.vercel.app/?user=kavinu1&theme=dark&hide_border=false" />
       </td>
       <td width="50%" align="center">
          <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kavinu1&theme=dark&hide_border=false&no-bg=true&no-frame=true&langs_count=10&count_private=true"/>
