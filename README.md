@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./image/main.gif" width="100%">
+  <a href="https://readme-typing-svg.herokuapp.com/demo/?font=Pacifico&size=24&lines=Hi%2C+I%E2%80%99m+Kavinu+Thepul;Computer+Science+Undergraduate+at+UOW">
 </p>
 
 ## 👩‍💻 About Me
