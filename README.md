@@ -1,8 +1,8 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<br><br><br>
+<br>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Pacifico&size=24&pause=1000&width=435&lines=Hi%2C+I%E2%80%99m+Kavinu+Thepul;Computer+Science+Undergraduate+at+UOW" alt="Typing SVG" /></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Pacifico&size=28&pause=1000&center=true&vCenter=true&width=580&height=40&lines=Hi%2C+I%E2%80%99m+Kavinu+Thepul;Computer+Science+Undergraduate+at+UOW" alt="Typing SVG" /></a>
 </p>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
