@@ -34,7 +34,7 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
 | **MediGo** — Ambulance Fleet Management | Flutter, React, TypeScript | GitHub Actions, Vercel | [🔗 Live](https://medi-go-three.vercel.app/) |
 | **Pet Clinic Management** | React (Vite), Node.js, Express | Docker, GitHub Actions, Railway, Netlify | [🔗 Live](https://pawlk.netlify.app/) |
 | **InnerSage** — Climate Action Awareness | HTML, CSS, JavaScript | GitHub Actions, Jekyll Pages | [🔗 Live](https://innersage.xyz) |
-| **Portfolio** — DevOps Portfolio | React, TypeScript, Framer Motion | GitHub Pages + CI/CD | [🔗 Live](https://kavinu.netlify.com/) |
+| **Portfolio** — DevOps Portfolio | React, TypeScript, Framer Motion | GitHub Pages + CI/CD | [🔗 Live](https://kavinu.netlify.app/) |
 
 </div>
 
