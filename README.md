@@ -1,11 +1,12 @@
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<br>
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+  
+  <h1>Hi there, I'm Kavinu Thepul 👋</h1>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=2196F3&center=true&vCenter=true&width=600&height=40&lines=Aspiring+DevOps+Engineer;Computer+Science+Undergraduate;Full-Stack+Developer" alt="Typing SVG" /></a>
+  
+  <p><b>Passionate about DevOps, cloud infrastructure, and automation.</b></p>
 
-<p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Pacifico&size=26&pause=1000&center=true&vCenter=true&width=500&height=35&lines=Hi%2C+I%E2%80%99m+Kavinu+Thepul;Computer+Science+Undergraduate+at+UOW" alt="Typing SVG" /></a>
-</p>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+</div>
 
 ## 👩‍💻 About Me
 
@@ -24,6 +25,21 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
 - 💬 Ask me about Python, HTML, CSS
 
 - 📖 Always learning new things
+
+---
+
+## 📁 Featured Projects
+
+<div align="center">
+
+| Project | Stack | DevOps & Deployment | Live / Repo |
+|---------|-------|---------------------|-------------|
+| **MediGo** — Ambulance Fleet Management | Flutter, React, TypeScript | GitHub Actions, Vercel | [🔗 Live](https://medi-go-three.vercel.app/) |
+| **Pet Clinic Management** | React (Vite), Node.js, Express | Docker, GitHub Actions, Railway, Netlify | [🔗 Live](https://pawlk.netlify.app/) |
+| **InnerSage** — Climate Action Awareness | HTML, CSS, JavaScript | GitHub Actions, Jekyll Pages | [🔗 Live](https://innersage.xyz) |
+| **Portfolio** — DevOps Portfolio | React, TypeScript, Framer Motion | GitHub Pages + CI/CD | [🔗 Live](https://kavinu.netlify.com/) |
+
+</div>
 
 ---
 
@@ -48,7 +64,10 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
       <td width="50%" align="center">  
         <img  align="center"  src="https://github-readme-stats.vercel.app/api?username=kavinu1&theme=dark&show_icons=true&count_private=true" />
         </br></br>
-        <img  title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Mark streak" src="https://nirzak-streak-stats.vercel.app/?user=kavinu1&theme=dark&hide_border=false" />
+        <img 
+          src="https://streak-stats.demolab.com?user=kavinu1&theme=dark&hide_border=false" 
+          alt="GitHub streak" 
+        />
       </td>
       <td width="50%" align="center">
          <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kavinu1&theme=dark&hide_border=false&no-bg=true&no-frame=true&langs_count=10&count_private=true"/>
@@ -78,10 +97,26 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
 ### 🏆 GitHub Achievements
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=kavinu1&theme=tokyonight&no-frame=true&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy-rust.vercel.app/?username=kavinu1&theme=tokyonight&no-frame=true&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
+</div>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/🏆-Pull%20Shark-45B7D1?style=for-the-badge" alt="Pull Shark" />
+  <img src="https://img.shields.io/badge/🏆-YOLO-FF6B6B?style=for-the-badge" alt="YOLO" />
+  <img src="https://img.shields.io/badge/🏆-Quickdraw-4ECDC4?style=for-the-badge" alt="Quickdraw" />
+  <img src="https://img.shields.io/badge/🏆-Galaxy%20Brain-9B59B6?style=for-the-badge" alt="Galaxy Brain" />
 </div>
 
 ---
+
+### ☁️ DevOps, Cloud & CI/CD
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=docker,githubactions,git,github,linux,firebase,vercel,netlify" alt="DevOps & Cloud" />
+</div></br>
+<div align="center">
+  <img src="https://img.shields.io/badge/CI%2FCD-Automated%20Pipelines-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI/CD Pipelines" />
+  <img src="https://img.shields.io/badge/Docker-Containerization-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+</div>
 
 ### 🖥️ Programming Languages
 
@@ -95,17 +130,9 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" width="40" alt="JavaScript" />
 </div>
 
-### 🛠️ Technologies & Tools
-
+### 🚀 Frameworks & Tools
 <div align="center">
-  <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://skillicons.dev/icons?i=github" alt="GitHub" width="40" height="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.worldvectorlogo.com/logos/adobe-photoshop-2.svg" alt="photoshop" width="40" height="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.worldvectorlogo.com/logos/intellij-idea-1.svg" alt="intellij" width="40" height="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="pycharm" width="40" height="40" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="canva" width="40" height="40" />
+  <img src="https://skillicons.dev/icons?i=react,nodejs,express,flutter,vite,vscode,idea" alt="Frameworks & Tools" />
 </div>
 
 ### 📬 **Connect with Me**
