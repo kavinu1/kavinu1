@@ -18,13 +18,10 @@ Hi, I’m Kavinu Thepul, a Computer Science student passionate about coding and 
 
 On GitHub, I share my projects, experiments, and coursework as I grow as a developer. I value collaboration and feedback, so feel free to explore my work and reach out — I’m always open to learning and connecting!
 
-- 🌱 I’m currently learning **Computer Science**
-
-- 🧑‍🎓 I’m an Undergraduate at **UOW**
-
-- 💬 Ask me about Python, HTML, CSS
-
-- 📖 Always learning new things
+- 🎓 Computer Science Undergraduate at **University of Westminster (UOW)**.
+- ☁️ Experienced with **Git workflows, Docker containerization, and full-stack development**.
+- 🌱 Currently seeking a **DevOps Engineering internship** to gain industry experience in CI/CD, cloud deployment, and scalable system development.
+- 💻 Building projects like an Ambulance Fleet Management System (**MediGo**) and a full-stack **Pet Clinic** app!
 
 ---
 
