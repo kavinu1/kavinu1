@@ -59,15 +59,24 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
   <table align="center">
     <tr border="none">
       <td width="50%" align="center">  
-        <img  align="center"  src="https://github-readme-stats.vercel.app/api?username=kavinu1&theme=dark&show_icons=true&count_private=true" />
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=kavinu1&theme=dark&show_icons=true&count_private=true">
+          <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=kavinu1&show_icons=true&count_private=true">
+          <img align="center" src="https://github-readme-stats.vercel.app/api?username=kavinu1&show_icons=true&count_private=true" alt="GitHub Stats" />
+        </picture>
         </br></br>
-        <img 
-          src="https://streak-stats.demolab.com?user=kavinu1&theme=dark&hide_border=false" 
-          alt="GitHub streak" 
-        />
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=kavinu1&theme=dark&hide_border=false">
+          <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=kavinu1&hide_border=false">
+          <img src="https://streak-stats.demolab.com?user=kavinu1&hide_border=false" alt="GitHub streak" />
+        </picture>
       </td>
       <td width="50%" align="center">
-         <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kavinu1&theme=dark&hide_border=false&no-bg=true&no-frame=true&langs_count=10&count_private=true"/>
+         <picture>
+           <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=kavinu1&theme=dark&hide_border=false&no-bg=true&no-frame=true&langs_count=10&count_private=true">
+           <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=kavinu1&hide_border=false&no-bg=true&no-frame=true&langs_count=10&count_private=true">
+           <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kavinu1&hide_border=false&no-bg=true&no-frame=true&langs_count=10&count_private=true" alt="Top Languages" />
+         </picture>
       </td>
     </tr>
   </table>
@@ -76,7 +85,11 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
 ---
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kavinu1&bg_color=0d1117&color=ffffff&line=ffa500&point=00ff00&hide_border=true" alt="Activity Graph">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=kavinu1&bg_color=0d1117&color=ffffff&line=ffa500&point=00ff00&hide_border=true">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=kavinu1&hide_border=true">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=kavinu1&hide_border=true" alt="Activity Graph">
+  </picture>
 </p>
 
 ---
@@ -94,7 +107,11 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
 ### 🏆 GitHub Achievements
 
 <div align="center">
-  <img src="https://github-profile-trophy-rust.vercel.app/?username=kavinu1&theme=tokyonight&no-frame=true&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy-rust.vercel.app/?username=kavinu1&theme=tokyonight&no-frame=true&column=7&margin-w=15&margin-h=15">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy-rust.vercel.app/?username=kavinu1&no-frame=true&column=7&margin-w=15&margin-h=15">
+    <img src="https://github-profile-trophy-rust.vercel.app/?username=kavinu1&no-frame=true&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
+  </picture>
 </div>
 
 <div align="center">
