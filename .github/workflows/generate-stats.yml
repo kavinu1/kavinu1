@@ -32,8 +32,22 @@ jobs:
           PAT_1: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm install --legacy-peer-deps
-          npm start &
-          sleep 15
+          # Run in background and redirect output to log file
+          npm start > ../server.log 2>&1 &
+          
+          # Wait for server to be ready (up to 60 seconds)
+          echo "Waiting for server to start..."
+          for i in {1..12}; do
+            if curl -s http://localhost:9000/api > /dev/null; then
+              echo "Server is up!"
+              exit 0
+            fi
+            echo "Waiting... ($i)"
+            sleep 5
+          done
+          echo "Server failed to start in time. Logs:"
+          cat ../server.log
+          exit 1
           
       - name: Generate Stats SVGs
         run: |
