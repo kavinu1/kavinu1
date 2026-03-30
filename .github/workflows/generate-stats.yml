@@ -15,6 +15,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Create output directory
+        run: mkdir -p generated
+
       # ── GitHub Stats Card ──────────────────────────────────────────────
       - name: Generate GitHub Stats (Dark)
         uses: lowlighter/metrics@latest
@@ -25,6 +28,7 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Colombo
           config_output: svg
+          output_action: none
           filename: generated/github-stats-dark.svg
           config_padding: 6
           extras_css: |
@@ -40,6 +44,7 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Colombo
           config_output: svg
+          output_action: none
           filename: generated/github-stats-light.svg
           config_padding: 6
 
@@ -56,6 +61,7 @@ jobs:
           plugin_languages_indepth: yes
           config_timezone: Asia/Colombo
           config_output: svg
+          output_action: none
           filename: generated/top-langs-dark.svg
           extras_css: |
             :root { color-scheme: dark; }
@@ -73,12 +79,20 @@ jobs:
           plugin_languages_indepth: yes
           config_timezone: Asia/Colombo
           config_output: svg
+          output_action: none
           filename: generated/top-langs-light.svg
+
+      - name: List generated files
+        run: ls -la generated/
 
       - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add generated/
-          git diff --cached --quiet || git commit -m "chore: update github stats"
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update github stats"
+            git push
+          fi
