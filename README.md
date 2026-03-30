@@ -87,8 +87,8 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=kavinu1&bg_color=0d1117&color=ffffff&line=ffa500&point=00ff00&hide_border=true">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=kavinu1&hide_border=true">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=kavinu1&hide_border=true" alt="Activity Graph">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=kavinu1&bg_color=ffffff&color=000000&line=ffa500&point=00ff00&hide_border=true">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=kavinu1&bg_color=ffffff&color=000000&line=ffa500&point=00ff00&hide_border=true" alt="Activity Graph">
   </picture>
 </p>
 
