@@ -13,63 +13,72 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Checkout github-readme-stats
-        uses: actions/checkout@v3
+      # ── GitHub Stats Card ──────────────────────────────────────────────
+      - name: Generate GitHub Stats (Dark)
+        uses: lowlighter/metrics@latest
         with:
-          repository: anuraghazra/github-readme-stats
-          path: github-readme-stats
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: kavinu1
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Colombo
+          config_output: svg
+          filename: generated/github-stats-dark.svg
+          config_padding: 6
+          extras_css: |
+            :root { color-scheme: dark; }
+            body { background: #161b22; color: #e6edf3; }
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Generate GitHub Stats (Light)
+        uses: lowlighter/metrics@latest
         with:
-          node-version: 18
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: kavinu1
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Colombo
+          config_output: svg
+          filename: generated/github-stats-light.svg
+          config_padding: 6
 
-      - name: Start github-readme-stats server
-        working-directory: github-readme-stats
-        env:
-          PAT_1: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          npm install --legacy-peer-deps
-          # Run in background and redirect output to log file
-          npm start > ../server.log 2>&1 &
-          
-          # Wait for server to be ready (up to 60 seconds)
-          echo "Waiting for server to start..."
-          for i in {1..12}; do
-            if curl -s http://localhost:9000/api > /dev/null; then
-              echo "Server is up!"
-              exit 0
-            fi
-            echo "Waiting... ($i)"
-            sleep 5
-          done
-          echo "Server failed to start in time. Logs:"
-          cat ../server.log
-          exit 1
-          
-      - name: Generate Stats SVGs
-        run: |
-          mkdir -p generated
-          
-          # Fetch Stats
-          curl -o generated/github-stats-dark.svg "http://localhost:9000/api?username=${{ github.repository_owner }}&theme=dark&show_icons=true&count_private=true"
-          curl -o generated/github-stats-light.svg "http://localhost:9000/api?username=${{ github.repository_owner }}&show_icons=true&count_private=true"
-          
-          # Fetch Top Langs
-          curl -o generated/top-langs-dark.svg "http://localhost:9000/api/top-langs/?username=${{ github.repository_owner }}&theme=dark&hide_border=false&no-bg=true&no-frame=true&langs_count=10&count_private=true"
-          curl -o generated/top-langs-light.svg "http://localhost:9000/api/top-langs/?username=${{ github.repository_owner }}&hide_border=false&no-bg=true&no-frame=true&langs_count=10&count_private=true"
-          
-      - name: Stop server and cleanup
-        run: |
-          pkill node || true
-          rm -rf github-readme-stats
+      # ── Top Languages Card ────────────────────────────────────────────
+      - name: Generate Top Languages (Dark)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: kavinu1
+          template: classic
+          base: ""
+          plugin_languages: yes
+          plugin_languages_count: 10
+          plugin_languages_indepth: yes
+          config_timezone: Asia/Colombo
+          config_output: svg
+          filename: generated/top-langs-dark.svg
+          extras_css: |
+            :root { color-scheme: dark; }
+            body { background: #161b22; color: #e6edf3; }
+
+      - name: Generate Top Languages (Light)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: kavinu1
+          template: classic
+          base: ""
+          plugin_languages: yes
+          plugin_languages_count: 10
+          plugin_languages_indepth: yes
+          config_timezone: Asia/Colombo
+          config_output: svg
+          filename: generated/top-langs-light.svg
 
       - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add generated/
-          git commit -m "chore: update github stats" || exit 0
+          git diff --cached --quiet || git commit -m "chore: update github stats"
           git push
