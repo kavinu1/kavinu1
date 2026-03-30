@@ -60,9 +60,9 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
     <tr border="none">
       <td width="50%" align="center">  
         <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=kavinu1&theme=dark&show_icons=true&count_private=true">
-          <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=kavinu1&show_icons=true&count_private=true">
-          <img align="center" src="https://github-readme-stats.vercel.app/api?username=kavinu1&show_icons=true&count_private=true" alt="GitHub Stats" />
+          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kavinu1/kavinu1/main/generated/github-stats-dark.svg">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kavinu1/kavinu1/main/generated/github-stats-light.svg">
+          <img align="center" src="https://raw.githubusercontent.com/kavinu1/kavinu1/main/generated/github-stats-light.svg" alt="GitHub Stats" />
         </picture>
         </br></br>
         <picture>
@@ -73,9 +73,9 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
       </td>
       <td width="50%" align="center">
          <picture>
-           <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=kavinu1&theme=dark&hide_border=false&no-bg=true&no-frame=true&langs_count=10&count_private=true">
-           <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=kavinu1&hide_border=false&no-bg=true&no-frame=true&langs_count=10&count_private=true">
-           <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kavinu1&hide_border=false&no-bg=true&no-frame=true&langs_count=10&count_private=true" alt="Top Languages" />
+           <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kavinu1/kavinu1/main/generated/top-langs-dark.svg">
+           <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kavinu1/kavinu1/main/generated/top-langs-light.svg">
+           <img align="center" src="https://raw.githubusercontent.com/kavinu1/kavinu1/main/generated/top-langs-light.svg" alt="Top Languages" />
          </picture>
       </td>
     </tr>
