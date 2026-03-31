@@ -152,18 +152,18 @@ def fmt_range(start, end):
 
 # ── SVG generation ────────────────────────────────────────────────────────────
 def make_svg(s, dark=True):
-    bg     = "#0d1117" if dark else "#fffefe"
-    border = "#30363d" if dark else "#e4e2e2"
+    bg      = "#0d1117" if dark else "#fffefe"
+    border  = "#30363d" if dark else "#e4e2e2"
     divider = "#2d2d2d" if dark else "#e0dede"
-    big_num = "#ffffff"  if dark else "#1c1c1c"
-    label   = "#e0e0e0"  if dark else "#3d3d3d"
-    sub     = "#8a8a8a"  if dark else "#767676"
-    accent  = "none"
+    big_num = "#e6edf3"  if dark else "#2d333b"
+    label   = "#c9d1d9"  if dark else "#434d58"
+    sub     = "#8b949e"  if dark else "#767676"
+    accent  = "#f0883e"  # orange – same both themes
 
-    W, H    = 480, 110
-    SEC_W   = W // 3          # ~160 each section
-    CX      = W // 2          # centre x for ring
-    CY      = H // 2 + 2
+    W, H    = 495, 120   # Increased width to match stats card (495)
+    SEC_W   = W // 3
+    CX      = W // 2
+    CY      = H // 2 + 5
     R       = 36
     circumference = 2 * math.pi * R
 
@@ -172,27 +172,22 @@ def make_svg(s, dark=True):
     dash_on    = circumference * streak_pct
     dash_off   = circumference - dash_on
 
-    # Flame icon (simplified path, centred above ring)
-    flame_d = ("M8.5 0c0 2.5-2 4-2 6.5a2.5 2.5 0 005 0C11.5 4 9.5 2.5 9.5 0zM5 "
-               "9.5C3.343 9.5 2 10.843 2 12.5S3.343 15.5 5 15.5c1.657 0 3-1.343 "
-               "3-3S6.657 9.5 5 9.5z")
-
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}">
   <!-- Card -->
-  <rect width="{W}" height="{H}" rx="8" fill="{bg}" stroke="{border}" stroke-width="1"/>
+  <rect width="{W}" height="{H}" rx="10" fill="{bg}" stroke="{border}" stroke-width="1"/>
 
   <!-- Dividers -->
-  <line x1="{SEC_W}" y1="15" x2="{SEC_W}" y2="{H-15}" stroke="{divider}" stroke-width="1"/>
-  <line x1="{SEC_W*2}" y1="15" x2="{SEC_W*2}" y2="{H-15}" stroke="{divider}" stroke-width="1"/>
+  <line x1="{SEC_W}" y1="20" x2="{SEC_W}" y2="{H-20}" stroke="{divider}" stroke-width="1"/>
+  <line x1="{SEC_W*2}" y1="20" x2="{SEC_W*2}" y2="{H-20}" stroke="{divider}" stroke-width="1"/>
 
   <!-- ── LEFT: Total Contributions ── -->
-  <text x="{SEC_W//2}" y="36" text-anchor="middle" font-size="26" font-weight="700"
+  <text x="{SEC_W//2}" y="42" text-anchor="middle" font-size="28" font-weight="700"
         fill="{big_num}" font-family="{FONT}">{s['total']:,}</text>
-  <text x="{SEC_W//2}" y="58" text-anchor="middle" font-size="12" font-weight="600"
+  <text x="{SEC_W//2}" y="65" text-anchor="middle" font-size="13" font-weight="600"
         fill="{label}" font-family="{FONT}">Total Contributions</text>
-  <text x="{SEC_W//2}" y="74" text-anchor="middle" font-size="10.5" fill="{sub}"
+  <text x="{SEC_W//2}" y="84" text-anchor="middle" font-size="11" fill="{sub}"
         font-family="{FONT}">{fmt_date(s['acct_start'])}</text>
-  <text x="{SEC_W//2}" y="87" text-anchor="middle" font-size="10.5" fill="{sub}"
+  <text x="{SEC_W//2}" y="98" text-anchor="middle" font-size="11" fill="{sub}"
         font-family="{FONT}">- Present</text>
 
   <!-- ── MIDDLE: Current Streak (ring) ── -->
@@ -207,20 +202,20 @@ def make_svg(s, dark=True):
   <!-- Small flame dot at top of ring -->
   <circle cx="{CX}" cy="{CY - R}" r="5" fill="{accent}"/>
   <!-- Streak number -->
-  <text x="{CX}" y="{CY + 8}" text-anchor="middle" font-size="22" font-weight="700"
+  <text x="{CX}" y="{CY + 10}" text-anchor="middle" font-size="24" font-weight="700"
         fill="{accent}" font-family="{FONT}">{s['cur_streak']}</text>
   <!-- Label below ring -->
-  <text x="{CX}" y="{H - 22}" text-anchor="middle" font-size="11.5" font-weight="600"
+  <text x="{CX}" y="{H - 24}" text-anchor="middle" font-size="12" font-weight="600"
         fill="{accent}" font-family="{FONT}">Current Streak</text>
-  <text x="{CX}" y="{H - 9}" text-anchor="middle" font-size="10" fill="{sub}"
+  <text x="{CX}" y="{H - 9}" text-anchor="middle" font-size="11" fill="{sub}"
         font-family="{FONT}">{fmt_range(s['cur_start'], s['cur_end'])}</text>
 
   <!-- ── RIGHT: Longest Streak ── -->
-  <text x="{SEC_W*2 + SEC_W//2}" y="36" text-anchor="middle" font-size="26" font-weight="700"
+  <text x="{SEC_W*2 + SEC_W//2}" y="42" text-anchor="middle" font-size="28" font-weight="700"
         fill="{big_num}" font-family="{FONT}">{s['long_streak']}</text>
-  <text x="{SEC_W*2 + SEC_W//2}" y="58" text-anchor="middle" font-size="12" font-weight="600"
+  <text x="{SEC_W*2 + SEC_W//2}" y="65" text-anchor="middle" font-size="13" font-weight="600"
         fill="{label}" font-family="{FONT}">Longest Streak</text>
-  <text x="{SEC_W*2 + SEC_W//2}" y="74" text-anchor="middle" font-size="10.5" fill="{sub}"
+  <text x="{SEC_W*2 + SEC_W//2}" y="84" text-anchor="middle" font-size="11" fill="{sub}"
         font-family="{FONT}">{fmt_range(s['long_start'], s['long_end'])}</text>
 </svg>
 """
