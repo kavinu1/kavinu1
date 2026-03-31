@@ -18,42 +18,21 @@ jobs:
       - name: Create output directory
         run: mkdir -p generated
 
-      # ── GitHub Stats Card ──────────────────────────────────────────────
-      - name: Generate GitHub Stats (Dark)
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          user: kavinu1
-          template: classic
-          base: header, activity, community, repositories, metadata
-          config_timezone: Asia/Colombo
-          config_output: svg
-          output_action: none
-          filename: generated/github-stats-dark.svg
-          config_padding: 6
-          extras_css: |
-            :root { color-scheme: dark; }
-            body { background: #161b22; color: #e6edf3; }
-
-      - name: Generate GitHub Stats (Light)
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          user: kavinu1
-          template: classic
-          base: header, activity, community, repositories, metadata
-          config_timezone: Asia/Colombo
-          config_output: svg
-          output_action: none
-          filename: generated/github-stats-light.svg
-          config_padding: 6
-
-      # ── Top Languages Card ─────────────────────────────────────────────
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
+      # ── GitHub Stats Card ─────────────────────────────────────────────
+      - name: Generate GitHub Stats SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: kavinu1
+          OUTPUT_DARK: generated/github-stats-dark.svg
+          OUTPUT_LIGHT: generated/github-stats-light.svg
+        run: python .github/scripts/generate_stats_svg.py
+
+      # ── Top Languages Card ────────────────────────────────────────────
       - name: Generate Top Languages SVGs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
