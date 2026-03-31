@@ -152,8 +152,8 @@ def fmt_range(start, end):
 
 # ── SVG generation ────────────────────────────────────────────────────────────
 def make_svg(s, dark=True):
-    bg      = "#151515" if dark else "#fffefe"
-    border  = "#2a2a2a" if dark else "#e4e2e2"
+    bg     = "#0d1117" if dark else "#fffefe"
+    border = "#30363d" if dark else "#e4e2e2"
     divider = "#2d2d2d" if dark else "#e0dede"
     big_num = "#ffffff"  if dark else "#1c1c1c"
     label   = "#e0e0e0"  if dark else "#3d3d3d"
