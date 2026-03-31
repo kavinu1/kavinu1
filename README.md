@@ -66,9 +66,9 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
         </picture>
         </br></br>
         <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=kavinu1&theme=dark&hide_border=false">
-          <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=kavinu1&hide_border=false">
-          <img src="https://streak-stats.demolab.com?user=kavinu1&hide_border=false" alt="GitHub streak" />
+          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kavinu1/kavinu1/main/generated/streak-stats-dark.svg">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kavinu1/kavinu1/main/generated/streak-stats-light.svg">
+          <img src="https://raw.githubusercontent.com/kavinu1/kavinu1/main/generated/streak-stats-light.svg" alt="GitHub streak" />
         </picture>
       </td>
       <td width="50%" align="center">
