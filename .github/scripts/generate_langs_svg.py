@@ -51,6 +51,13 @@ LANG_COLORS = {
     "SQL":         "#e38c00",
 }
 
+TECH_INDICATORS = {
+    "React":   ["react", "reactjs", "react-native"],
+    "Docker":  ["docker", "dockerfile", "container", "kubernetes"],
+    "Node.js": ["node", "nodejs", "express", "fastify"],
+    "SQL":     ["sql", "mysql", "postgresql", "postgres", "sqlite", "database", "orm"],
+}
+
 FALLBACK_COLORS = [
     "#6e7681","#58a6ff","#bc8cff","#f78166","#56d364",
     "#e3b341","#db6d28","#ffa657","#79c0ff","#d2a8ff",
@@ -62,6 +69,13 @@ query($login: String!) {
   user(login: $login) {
     repositories(ownerAffiliations: OWNER, isFork: false, first: 100) {
       nodes {
+        name
+        description
+        repositoryTopics(first: 10) {
+          nodes {
+            topic { name }
+          }
+        }
         languages(first: 20, orderBy: {field: SIZE, direction: DESC}) {
           edges {
             size
@@ -92,13 +106,34 @@ def fetch_language_sizes():
     data = graphql(QUERY, {"login": USERNAME})
     sizes = {}
     colors_from_api = {}
+    
     for repo in data["data"]["user"]["repositories"]["nodes"]:
+        repo_lang_size = 0
+        
+        # Collect languages
         for edge in repo["languages"]["edges"]:
             name  = edge["node"]["name"]
             color = edge["node"]["color"]
-            sizes[name] = sizes.get(name, 0) + edge["size"]
+            size  = edge["size"]
+            sizes[name] = sizes.get(name, 0) + size
+            repo_lang_size += size
             if color and name not in colors_from_api:
                 colors_from_api[name] = color
+        
+        # Detect Techs
+        if repo_lang_size == 0:
+            continue
+            
+        desc = (repo.get("description") or "").lower()
+        topics = [t["topic"]["name"].lower() for t in repo["repositoryTopics"]["nodes"]]
+        metadata_text = f"{repo['name'].lower()} {desc} {' '.join(topics)}"
+        
+        for tech, keywords in TECH_INDICATORS.items():
+            if any(kw in metadata_text for kw in keywords):
+                # Assign a virtual size (e.g., 25% of the total language size for that repo)
+                virtual_size = int(repo_lang_size * 0.25)
+                sizes[tech] = sizes.get(tech, 0) + virtual_size
+                
     return sizes, colors_from_api
 
 def top_langs(sizes, colors_from_api):
@@ -153,7 +188,7 @@ def make_svg(langs, dark=True):
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">
   <rect width="{width}" height="{height}" rx="10" fill="{bg}" stroke="{border}" stroke-width="1"/>
   <text x="{PAD_X}" y="30" font-size="16" font-weight="700" fill="{title}"
-        font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">Most Used Languages</text>
+        font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">Top Languages &amp; Frameworks</text>
 {rows_svg}
 </svg>
 """
