@@ -42,6 +42,15 @@ jobs:
           MAX_LANGS: 6
         run: python .github/scripts/generate_langs_svg.py
 
+      # ── Streak Stats Card ─────────────────────────────────────────────
+      - name: Generate Streak Stats SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: kavinu1
+          OUTPUT_DARK: generated/streak-stats-dark.svg
+          OUTPUT_LIGHT: generated/streak-stats-light.svg
+        run: python .github/scripts/generate_streak_svg.py
+
       - name: List generated files
         run: ls -la generated/
 
