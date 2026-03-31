@@ -158,7 +158,6 @@ def make_svg(s, dark=True):
     big_num = "#ffffff"  if dark else "#1c1c1c"
     label   = "#e0e0e0"  if dark else "#3d3d3d"
     sub     = "#8a8a8a"  if dark else "#767676"
-    accent  = "#f0883e"  # orange – same both themes
 
     W, H    = 480, 110
     SEC_W   = W // 3          # ~160 each section
