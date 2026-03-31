@@ -45,6 +45,10 @@ LANG_COLORS = {
     "Jupyter Notebook": "#DA5B0B",
     "MDX":         "#fcb32c",
     "Markdown":    "#083fa1",
+    "React":       "#61dafb",
+    "Docker":      "#2496ed",
+    "Node.js":     "#339933",
+    "SQL":         "#e38c00",
 }
 
 FALLBACK_COLORS = [
