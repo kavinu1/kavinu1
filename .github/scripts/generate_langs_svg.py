@@ -56,6 +56,9 @@ TECH_INDICATORS = {
     "Docker":  ["docker", "dockerfile", "container", "kubernetes"],
     "Node.js": ["node", "nodejs", "express", "fastify"],
     "SQL":     ["sql", "mysql", "postgresql", "postgres", "sqlite", "database", "orm"],
+    "Terraform": ["terraform", "hcl", "iac", "infrastructure"],
+    "Kubernetes": ["kubernetes", "k8s", "helm", "kube"],
+    "GitHub Actions": ["github-actions", "workflow", "ci-cd", "pipeline"],
 }
 
 FALLBACK_COLORS = [
@@ -115,6 +118,9 @@ def fetch_language_sizes():
             name  = edge["node"]["name"]
             color = edge["node"]["color"]
             size  = edge["size"]
+            if name == "Dockerfile": name = "Docker"
+            elif name == "HCL": name = "Terraform"
+            
             sizes[name] = sizes.get(name, 0) + size
             repo_lang_size += size
             if color and name not in colors_from_api:
@@ -130,8 +136,8 @@ def fetch_language_sizes():
         
         for tech, keywords in TECH_INDICATORS.items():
             if any(kw in metadata_text for kw in keywords):
-                # Assign a virtual size (e.g., 25% of the total language size for that repo)
-                virtual_size = int(repo_lang_size * 0.25)
+                # Assign a virtual size (e.g., 75% of the total language size for that repo)
+                virtual_size = int(repo_lang_size * 0.75)
                 sizes[tech] = sizes.get(tech, 0) + virtual_size
                 
     return sizes, colors_from_api

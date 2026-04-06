@@ -39,7 +39,7 @@ jobs:
           GH_USERNAME: kavinu1
           OUTPUT_DARK: generated/top-langs-dark.svg
           OUTPUT_LIGHT: generated/top-langs-light.svg
-          MAX_LANGS: 6
+          MAX_LANGS: 8
         run: python .github/scripts/generate_langs_svg.py
 
       # ── Streak Stats Card ─────────────────────────────────────────────
