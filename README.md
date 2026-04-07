@@ -32,9 +32,9 @@ On GitHub, I share my projects, experiments, and coursework as I grow as a devel
 | Project | Stack | DevOps & Deployment | Live / Repo |
 |---------|-------|---------------------|-------------|
 | **MediGo** — Ambulance Fleet Management | Flutter, React, TypeScript | GitHub Actions, Vercel | [🔗 Live](https://medigoadmin.pages.dev/) |
-| **Pet Clinic Management** | React (Vite), Node.js, Express | Docker, GitHub Actions, Railway, Netlify | [🔗 Live](https://pawlk.netlify.app/) |
+| **Pet Clinic Management** | React (Vite), Node.js, Express | Docker, GitHub Actions, Railway, Netlify | [🔗 Live](https://pawlk.pages.dev/) |
 | **InnerSage** — Climate Action Awareness | HTML, CSS, JavaScript | GitHub Actions, Jekyll Pages | [🔗 Live](https://innersage.xyz) |
-| **Portfolio** — DevOps Portfolio | React, TypeScript, Framer Motion | GitHub Pages + CI/CD | [🔗 Live](https://kavinu.netlify.app/) |
+| **Portfolio** — DevOps Portfolio | React, TypeScript, Framer Motion | GitHub Pages + CI/CD | [🔗 Live](https://kavinu.pages.dev/) |
 
 </div>
 
