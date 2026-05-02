@@ -2,7 +2,7 @@
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
   
   <h1>Hi there, I'm Kavinu Thepul 👋</h1>
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=2196F3&center=true&vCenter=true&width=600&height=40&lines=Aspiring+DevOps+Engineer;Computer+Science+Undergraduate;Full-Stack+Developer" alt="Typing SVG" /></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&pause=1000&color=2196F3&center=true&vCenter=true&width=600&height=40&lines=Aspiring+DevOps+Engineer;Computer+Science+Undergraduate" alt="Typing SVG" /></a>
   
   <p><b>Passionate about DevOps, cloud infrastructure, and automation.</b></p>
 
