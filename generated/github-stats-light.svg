@@ -37,14 +37,14 @@
   </svg>
   <text x="47" y="148" font-size="13.5" fill="#434d58" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">Contributed to:</text>
   <text x="205" y="148" font-size="13.5" fill="#2d333b" font-weight="700"
-        font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">3</text>
+        font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">2</text>
 
   <!-- Rank badge track -->
   <circle cx="420" cy="85" r="38" fill="#fffefe" stroke="#dce1e6" stroke-width="6"/>
   <!-- Rank badge ring -->
   <circle cx="420" cy="85" r="38" fill="none"
           stroke="#58a6ff" stroke-width="6"
-          stroke-dasharray="56.78 150.56"
+          stroke-dasharray="55.69 151.66"
           stroke-linecap="round"
           transform="rotate(-90 420 85)"/>
   <!-- Rank label -->
