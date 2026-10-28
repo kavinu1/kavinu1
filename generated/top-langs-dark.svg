@@ -14,7 +14,7 @@
   <text x="20" y="99" font-size="13" fill="#58a6ff" font-weight="600"
         font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">GitHub Actions</text>
   <text x="380" y="99" font-size="12" fill="#8b949e" text-anchor="end"
-        font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">15.80%</text>
+        font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">15.79%</text>
   <rect x="20" y="106" width="260" height="8" rx="4" fill="#21262d"/>
   <rect x="20" y="106" width="41.07" height="8" rx="4" fill="#58a6ff"/>
   <!-- TypeScript -->
@@ -23,12 +23,12 @@
   <text x="380" y="135" font-size="12" fill="#8b949e" text-anchor="end"
         font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">15.49%</text>
   <rect x="20" y="142" width="260" height="8" rx="4" fill="#21262d"/>
-  <rect x="20" y="142" width="40.28" height="8" rx="4" fill="#3178c6"/>
+  <rect x="20" y="142" width="40.26" height="8" rx="4" fill="#3178c6"/>
   <!-- Docker -->
   <text x="20" y="171" font-size="13" fill="#2496ed" font-weight="600"
         font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">Docker</text>
   <text x="380" y="171" font-size="12" fill="#8b949e" text-anchor="end"
-        font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">12.16%</text>
+        font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">12.17%</text>
   <rect x="20" y="178" width="260" height="8" rx="4" fill="#21262d"/>
   <rect x="20" y="178" width="31.63" height="8" rx="4" fill="#2496ed"/>
   <!-- React -->
@@ -37,14 +37,14 @@
   <text x="380" y="207" font-size="12" fill="#8b949e" text-anchor="end"
         font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">9.93%</text>
   <rect x="20" y="214" width="260" height="8" rx="4" fill="#21262d"/>
-  <rect x="20" y="214" width="25.82" height="8" rx="4" fill="#61dafb"/>
+  <rect x="20" y="214" width="25.83" height="8" rx="4" fill="#61dafb"/>
   <!-- HTML -->
   <text x="20" y="243" font-size="13" fill="#e34c26" font-weight="600"
         font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">HTML</text>
   <text x="380" y="243" font-size="12" fill="#8b949e" text-anchor="end"
         font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">8.41%</text>
   <rect x="20" y="250" width="260" height="8" rx="4" fill="#21262d"/>
-  <rect x="20" y="250" width="21.87" height="8" rx="4" fill="#e34c26"/>
+  <rect x="20" y="250" width="21.86" height="8" rx="4" fill="#e34c26"/>
   <!-- Dart -->
   <text x="20" y="279" font-size="13" fill="#00B4AB" font-weight="600"
         font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">Dart</text>
@@ -58,5 +58,5 @@
   <text x="380" y="315" font-size="12" fill="#8b949e" text-anchor="end"
         font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">2.90%</text>
   <rect x="20" y="322" width="260" height="8" rx="4" fill="#21262d"/>
-  <rect x="20" y="322" width="7.53" height="8" rx="4" fill="#563d7c"/>
+  <rect x="20" y="322" width="7.55" height="8" rx="4" fill="#563d7c"/>
 </svg>
